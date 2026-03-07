@@ -1,4 +1,4 @@
 package org.example.modelos;
 
-public class EmpresaDesarrollador {
+public class EmpresaDesarrollo {
 }

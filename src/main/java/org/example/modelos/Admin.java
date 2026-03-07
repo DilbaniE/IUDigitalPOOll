@@ -1,4 +1,4 @@
 package org.example.modelos;
 
-public class Admin {
+public class Admin extends Empleado{
 }

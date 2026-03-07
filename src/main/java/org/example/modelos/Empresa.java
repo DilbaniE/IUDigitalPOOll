@@ -3,16 +3,17 @@ package org.example.modelos;
 public class Empresa {
     private int nit;
     private String nombre;
-    private String apellido;
     private String direccion;
     private String ciudad;
     private String email;
     private String telefono;
 
-    public Empresa(int nit, String nombre, String apellido, String direccion, String ciudad, String email, String telefono) {
+    public Empresa() {
+    }
+
+    public Empresa(int nit, String nombre, String direccion, String ciudad, String email, String telefono) {
         this.nit = nit;
         this.nombre = nombre;
-        this.apellido = apellido;
         this.direccion = direccion;
         this.ciudad = ciudad;
         this.email = email;
@@ -21,9 +22,9 @@ public class Empresa {
 
     @Override
     public String toString() {
-        return "Empresa{" + "nit" + nit + "nombre" + nombre +
-                "apellido" + apellido + "direccion" + direccion  + "ciudad" + ciudad +
-                "email" + email + "telefono" + telefono + '}';
+        return "Empresa{" + " Nit: " + nit + " Nombre: " + nombre +
+                " Direccion: " + direccion  + " Ciudad: " + ciudad +
+                " Email: " + email + " Telefono: " + telefono + '}';
     }
     public int getNit() {
         return nit;
@@ -39,14 +40,6 @@ public class Empresa {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public String getDireccion() {

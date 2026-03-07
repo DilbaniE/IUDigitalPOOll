@@ -23,6 +23,7 @@ public abstract class Empleado {
         this.direccion = direccion;
         this.empresa = empresa;
     }
+
     public double calcularSueldo(int horas) {
         return sueldoHora * horas;
     }
@@ -37,9 +38,9 @@ public abstract class Empleado {
 
     @Override
     public String toString() {
-        return "Empleado{" + "id" + id + "documento" + documento + "nombre" + nombre +
-                "apellido" + apellido + "sueldoHora" + sueldoHora + "telefono" + telefono +
-                "direccion" + direccion + '}';
+        return "Empleado{ " + " id " + id + " Documento: " + documento + " Nombre: " + nombre +
+                " Apellido: " + apellido + " SueldoHora: " + sueldoHora + " Telefono: " + telefono +
+                " Direccion " + direccion + '}';
     }
 
     public Empresa getEmpresa() {
